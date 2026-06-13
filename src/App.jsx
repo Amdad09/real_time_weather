@@ -1,5 +1,6 @@
 import bg from './assets/body-bg.png';
 import Header from './components/header/Header';
+import WeatherBoard from './components/weather/weatherBoard';
 function App() {
     return (
         <div
@@ -7,11 +8,13 @@ function App() {
             style={{
                 backgroundImage: `url(${bg})`,
             }}
-      >
-        
-
+        >
             <Header />
-        
+            <main>
+                <section>
+                    <WeatherBoard/>
+                </section>
+            </main>
         </div>
     );
 }
